@@ -3,6 +3,7 @@ const cors = require('cors');
 const helmet = require('helmet');
 const rateLimit = require("express-rate-limit");
 const compression = require('compression');
+const eventRouter = require('./routers/eventsRouter');
 
 const app = express()
 
@@ -26,7 +27,7 @@ app.use(express.urlencoded({extended:false}));
 // app.use('/uploads/',express.static(path.join('uploads')));
 
 //all routes here
-// app.use('/api/content/',apiLimiter,contentRouter);
+app.use('/api/events/',apiLimiter,eventRouter);
 
 
 if (process.env.NODE_ENV === 'production') {
@@ -38,11 +39,6 @@ if (process.env.NODE_ENV === 'production') {
 
 // Error Handling Middleware
 app.use((error, req, res, next) => {
-    // if(req.file){
-    //     fs.unlink(req.file.path,err =>{
-    //         if(err) console.log(err);
-    //     })
-    // }
     if (res.headerSent) {
         return next(error)
     }
