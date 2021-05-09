@@ -1,0 +1,86 @@
+.new__content{
+    overflow: hidden;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #dadce0;
+    background-clip: padding-box;
+    text-align: center;
+    margin-bottom: 50px;
+    box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 2px 6px 2px rgb(60 64 67 / 15%);
+    -webkit-box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 2px 6px 2px rgb(60 64 67 / 15%);
+    min-width: 270px;
+}
+.new__content h2{
+    cursor: default;
+}
+
+.new__content p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    min-height: 50px;
+    cursor: default;
+}
+
+
+
+.btn{
+    background-image: linear-gradient(to right, #FF512F 0%, #F09819  51%, #FF512F  100%);
+    border: 1px solid #F09819;
+    border-radius: 8px;
+    padding: 1rem 1.5rem;
+    font-size: medium;
+    font-weight: 600;
+    font-family: sans-serif;
+    color: #fff;
+    line-height: 1;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-size: 200% auto;
+    transition: all .2s ease-in-out;
+}
+
+.btn:hover{
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+.btn:focus{
+    outline: 0;
+}
+
+#icon-button-file{
+    display: none;
+}
+
+.icon__btn__file{
+    border: 1px solid #F09819 !important;
+}
+
+.MuiIconButton-colorPrimary {
+    color: #F09819 !important;
+}
+
+.MuiInput-underline:before{
+    display: none;
+}
+
+.MuiInput-underline:after{
+    display: none;
+}
+
+@media (max-width: 500px) {
+    .new__content h2{
+        font-size: large;
+    }
+    
+    .new__content p{
+        font-size: medium;
+    }
+
+    .btn{
+        padding: 0.75rem 1.25rem;
+    }
+}

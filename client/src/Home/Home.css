@@ -1,0 +1,35 @@
+.home{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    margin: 0!important;
+}
+
+
+.main__section{
+    padding: 50px 100px;
+}
+
+
+@media (max-width: 500px) {
+    .main__section{
+        padding: 25px 50px;
+    }
+}
+
+@media (max-width: 420px) {
+    .main__section{
+        padding: 12.5px 25px;
+    }
+}
+
+@media (max-width: 300px) {
+    .main__section{
+        padding: 6px 12px;
+    }
+}

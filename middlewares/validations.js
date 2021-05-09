@@ -13,12 +13,12 @@ exports.validationEvent = [
         else return true;
     }).withMessage('Entered Date is not valid'),
     check('start_time').custom(val=>{
-        const reg = new RegExp('^(1[0-2]|0?[1-9]):[0-5][0-9] (AM|PM)$');
+        const reg = new RegExp('^(0[0-9]|1[0-9]|2[0-3]):[0-5][0-9]$');
         if(String(val).match(reg)) return true;
         else return false;
     }).withMessage('Start Time is not valid'),
     check('end_time').custom(val=>{
-        const reg = new RegExp('^(1[0-2]|0?[1-9]):[0-5][0-9] (AM|PM)$');
+        const reg = new RegExp('^(0[0-9]|1[0-9]|2[0-3]):[0-5][0-9]$');
         if(String(val).match(reg)) return true;
         else return false;
     }).withMessage('End Time is not valid'),

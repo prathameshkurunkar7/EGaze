@@ -6,6 +6,7 @@ const {validationResult} = require('express-validator');
 
 const createEvent = async(req,res,next) =>{
     
+    console.log(req.body)
     const errors = validationResult(req);
     if (!errors.isEmpty()) {
         const err = new HttpError(`${errors.array()[0].msg},please enter valid input.`,422)
