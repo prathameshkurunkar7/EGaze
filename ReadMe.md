@@ -6,12 +6,12 @@ Where full URLs are provided in responses they will be rendered as if service
 is running on 'http://localhost:3030'.
 
 Watch Demo:
-https://youtu.be/t8NGxgfzqVo
+https://youtu.be/Mcfn_K8UmBQ
 ## :wrench: How to setup
 
 ```bash
 git clone https://github.com/prathameshkurunkar7/EGaze.git
-cd ace-desk
+cd EGaze
 npm install && npm run install-client
 npm run client (in separate terminal)
 npm run dev
