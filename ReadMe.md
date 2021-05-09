@@ -23,9 +23,9 @@ npm run dev
 
 ## :hamburger: Tech Stack
 
-- MongoDB
 - Express.js
 - React.js
 - Node.js
 - Redux
-- Mongoose
+- PostGreSQL
+- AFrame
