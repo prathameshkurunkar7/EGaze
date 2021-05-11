@@ -1,6 +1,6 @@
 # EGaze-A MixedReality Web Application Experience
 
-This documentation speaks about the AceDesk Web Application.
+This documentation speaks about the EGaze Web Application.
 
 Where full URLs are provided in responses they will be rendered as if service
 is running on 'http://localhost:3030'.
